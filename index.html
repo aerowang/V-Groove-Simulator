@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>V-Groove Simulator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<!-- Input of Angle -->
+		<p>
+			<label for="">Angle(deg):</label><br>
+			<input type="text" id="txtAngle" value="60.0"></p>
+		<!-- Input of cladding diameter -->
+		<p>
+			<label for="">Cladding diameter(mm):</label><br>
+			<input type="text" id="txtCladD" value="0.125"></p>
+		<!-- Input of Gap -->
+		<p>
+			<label for="">Gap(mm):</label><br>
+			<input type="text" id="txtGap" value="0.03"></p>
+		<!-- Using JavaScript function do calculation -->
+		<p>
+			<button onclick="calculate()">Calc.</button>
+		</p>
+		
+		<hr><!-- ========== Separate line ========== -->
+
+		<!-- Output of scar's depth -->
+		<p id="txtDepth">Depth:</p>
+		<!-- Output of scar's width -->
+		<p id="txtWidth">Width:</p>
+		<!-- Visualize by canvas-->
+		<p><canvas id="myCanvas" width="400" height="300"></canvas></p>
+		<!-- <p><img src="v-groove.png" alt="V-Groove"></p> -->
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
